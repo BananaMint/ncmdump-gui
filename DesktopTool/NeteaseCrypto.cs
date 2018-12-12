@@ -224,7 +224,9 @@ namespace DesktopTool
             double alreadyProcess = 0;
 
             char[] ignore = Path.GetInvalidFileNameChars();
-            var convertName = Name;
+            //var convertName = Name;
+            string artists = String.Join(",",Artist);
+            var convertName = artists + " - " + Name;
 
             foreach (var i in ignore)
             {
